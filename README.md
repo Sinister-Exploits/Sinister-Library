@@ -26,7 +26,7 @@ game:GetService("RunService").RenderStepped:Connect(function()
 end)
 
 --// Main Libraries \\--
-local libary = loadstring(game:HttpGet("https://raw.githubusercontent.com/imagoodpersond/puppyware/main/lib"))()
+local libary = loadstring(game:HttpGet("https://raw.githubusercontent.com/Sinister-Exploits/Sinister-Library/refs/heads/main/Source"))()
 local Window = libary:new({name = "UI Name", accent = Color3.fromRGB(244, 95, 115), textsize = 13})
 
 --// Tabs \\--
@@ -98,7 +98,7 @@ end)
 
 # Load Library
 ```
-local libary = loadstring(game:HttpGet("https://raw.githubusercontent.com/imagoodpersond/puppyware/main/lib"))()
+local libary = loadstring(game:HttpGet("https://raw.githubusercontent.com/Sinister-Exploits/Sinister-Library/refs/heads/main/Source"))()
 ```
 
 # Create Window

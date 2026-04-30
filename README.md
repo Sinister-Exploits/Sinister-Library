@@ -13,6 +13,13 @@ local Theme = "Light Pink"
 local ThemeColor = Color3.fromRGB(244, 95, 115)
 game:GetService("RunService").RenderStepped:Connect(function()
     if Theme == "Light Pink" or Theme == "Default" then
+        ThemeColo--// UI Settings \\--
+local Theme = "Aura X"
+
+--// Settings Applier \\--
+local ThemeColor = Color3.fromRGB(244, 95, 115)
+game:GetService("RunService").RenderStepped:Connect(function()
+    if Theme == "Light Pink" or Theme == "Default" then
         ThemeColor = Color3.fromRGB(244, 95, 115)
     elseif Theme == "Yellow" or Theme == "Bright Yellow" then
         ThemeColor = Color3.fromRGB(255, 255, 0)
@@ -24,12 +31,16 @@ game:GetService("RunService").RenderStepped:Connect(function()
         ThemeColor = Color3.fromRGB(0, 255, 255)
     elseif Theme == "Red" or Theme == "Dark Red" then
         ThemeColor = Color3.fromRGB(153, 0, 0)
+    elseif Theme == "Blazed" then
+        ThemeColor = Color3.fromRGB(232, 186, 200)
+    elseif Theme == "Aura X" then
+        ThemeColor = Color3.fromRGB(0, 0, 204)
     end
 end)
 
 --// Main Libraries \\--
 local libary = loadstring(game:HttpGet("https://raw.githubusercontent.com/Sinister-Exploits/Sinister-Library/refs/heads/main/Source"))()
-local Window = libary:new({name = "UI Name", accent = Color3.fromRGB(244, 95, 115), textsize = 13})
+local Window = libary:new({name = "UI Name", accent = ThemeColor, textsize = 13})
 
 --// Tabs \\--
 local Tab1 = Window:page({name = "Tab1"})
@@ -58,7 +69,7 @@ Section1:slider({name = "Slider", def = 50, max = 100, min = 0, rounding = true,
 end})
 
 Section1:button({name = "Button", callback = function()
- 
+    print("Hello World")
 end})
 
 Section1:keybind({name = "Keybind", def = Enum.KeyCode.E, callback = function(Key)
@@ -83,6 +94,13 @@ local Theme = "Light Pink"
 local ThemeColor = Color3.fromRGB(244, 95, 115)
 game:GetService("RunService").RenderStepped:Connect(function()
     if Theme == "Light Pink" or Theme == "Default" then
+        ThemeColo--// UI Settings \\--
+local Theme = "Aura X"
+
+--// Settings Applier \\--
+local ThemeColor = Color3.fromRGB(244, 95, 115)
+game:GetService("RunService").RenderStepped:Connect(function()
+    if Theme == "Light Pink" or Theme == "Default" then
         ThemeColor = Color3.fromRGB(244, 95, 115)
     elseif Theme == "Yellow" or Theme == "Bright Yellow" then
         ThemeColor = Color3.fromRGB(255, 255, 0)
@@ -94,6 +112,10 @@ game:GetService("RunService").RenderStepped:Connect(function()
         ThemeColor = Color3.fromRGB(0, 255, 255)
     elseif Theme == "Red" or Theme == "Dark Red" then
         ThemeColor = Color3.fromRGB(153, 0, 0)
+    elseif Theme == "Blazed" then
+        ThemeColor = Color3.fromRGB(232, 186, 200)
+    elseif Theme == "Aura X" then
+        ThemeColor = Color3.fromRGB(0, 0, 204)
     end
 end)
 ```
@@ -105,7 +127,7 @@ local libary = loadstring(game:HttpGet("https://raw.githubusercontent.com/Sinist
 
 # Create Window
 ```
-local Window = libary:new({name = "UI Name", accent = Color3.fromRGB(244, 95, 115), textsize = 13})
+local Window = libary:new({name = "UI Name", accent = ThemeColor, textsize = 13})
 ```
 
 # Create Tabs

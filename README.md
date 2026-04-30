@@ -33,17 +33,17 @@ end)
 
 --// Main Libraries \\--
 local libary = loadstring(game:HttpGet("https://raw.githubusercontent.com/Sinister-Exploits/Sinister-Library/refs/heads/main/Source"))()
-local Window = libary:new({name = "drunk.lol", accent = ThemeColor, textsize = 13})
+local Window = libary:new({name = "UI Name", accent = ThemeColor, textsize = 13})
 
 --// Tabs \\--
-local AimingTab = Window:page({name = "Aiming"})
-local PlayerTab = Window:page({name = "Player"})
-local VisualsTab = Window:page({name = "Visuals"})
+local Tab1 = Window:page({name = "Tab1"})
+local Tab2 = Window:page({name = "Tab2"})
+local Tab3 = Window:page({name = "Tab3"})
 
 --// Sections\\--
-local AimlockSection = AimingTab:section({name = "Aimlock", side = "left",size = 320})
-local StrafeSection = AimingTab:section({name = "Strafe", side = "left",size = 320})
-local CamlockSection = AimingTab:section({name = "Camlock", side = "right",size = 320})
+local Section1 = Tab1:section({name = "Section1", side = "left",size = 320})
+local Section2 = Tab2:section({name = "Section2", side = "left",size = 320})
+local Section3 = Tab3:section({name = "Section3", side = "right",size = 320})
 
 local ConfigSection = Tab2:section({name = "Config",side = "right", size = 250})
 local ConfigLoader = ConfigSection:configloader({folder = "ExampleScript"})

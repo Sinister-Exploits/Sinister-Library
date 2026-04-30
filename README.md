@@ -7,14 +7,7 @@ UI Toggle Keybind: RightShift
 # Example Script
 ```
 --// UI Settings \\--
-local Theme = "Light Pink"
-
---// Settings Applier \\--
-local ThemeColor = Color3.fromRGB(244, 95, 115)
-game:GetService("RunService").RenderStepped:Connect(function()
-    if Theme == "Light Pink" or Theme == "Default" then
-        ThemeColo--// UI Settings \\--
-local Theme = "Aura X"
+local Theme = "Green"
 
 --// Settings Applier \\--
 local ThemeColor = Color3.fromRGB(244, 95, 115)
@@ -40,14 +33,18 @@ end)
 
 --// Main Libraries \\--
 local libary = loadstring(game:HttpGet("https://raw.githubusercontent.com/Sinister-Exploits/Sinister-Library/refs/heads/main/Source"))()
-local Window = libary:new({name = "UI Name", accent = ThemeColor, textsize = 13})
+local Window = libary:new({name = "drunk.lol", accent = ThemeColor, textsize = 13})
 
 --// Tabs \\--
-local Tab1 = Window:page({name = "Tab1"})
-local Tab2 = Window:page({name = "Tab2"})
+local AimingTab = Window:page({name = "Aiming"})
+local PlayerTab = Window:page({name = "Player"})
+local VisualsTab = Window:page({name = "Visuals"})
 
 --// Sections\\--
-local Section1 = Tab1:section({name = "Section1", side = "left",size = 320})
+local AimlockSection = AimingTab:section({name = "Aimlock", side = "left",size = 320})
+local StrafeSection = AimingTab:section({name = "Strafe", side = "left",size = 320})
+local CamlockSection = AimingTab:section({name = "Camlock", side = "right",size = 320})
+
 local ConfigSection = Tab2:section({name = "Config",side = "right", size = 250})
 local ConfigLoader = ConfigSection:configloader({folder = "ExampleScript"})
 

@@ -2,6 +2,8 @@
 Sinister Library is a Roblox CSGO-Styled UI Library created by me / @SinisterExploits on YouTube.
 I never planned on releasing a video about this since it was meant to be private, but if you found this then congrats!
 
+UI Toggle Keybind: RightShift
+
 # Example Script
 ```
 --// UI Settings \\--

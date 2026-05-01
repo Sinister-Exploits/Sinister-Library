@@ -91,13 +91,6 @@ local Theme = "Light Pink"
 local ThemeColor = Color3.fromRGB(244, 95, 115)
 game:GetService("RunService").RenderStepped:Connect(function()
     if Theme == "Light Pink" or Theme == "Default" then
-        ThemeColo--// UI Settings \\--
-local Theme = "Aura X"
-
---// Settings Applier \\--
-local ThemeColor = Color3.fromRGB(244, 95, 115)
-game:GetService("RunService").RenderStepped:Connect(function()
-    if Theme == "Light Pink" or Theme == "Default" then
         ThemeColor = Color3.fromRGB(244, 95, 115)
     elseif Theme == "Yellow" or Theme == "Bright Yellow" then
         ThemeColor = Color3.fromRGB(255, 255, 0)
